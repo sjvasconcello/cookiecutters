@@ -24,9 +24,20 @@ if select not in ramos:
     print(f"{ERROR_COLOR}ERROR: {select} no hay información de ese ramo {RESET_ALL}")
     sys.exit(1)
 
-cookiecutter('cookiecutter-pypackage/',
-             extra_context={'name_class': ramos[select]["name_class"], 'teacher': ramos[select]["teacher"]})
 
+def run():
+    template = os.path.dirname(os.path.realpath(__file__))
+
+    cookiecutter(
+        template,
+        extra_context={
+            'name_class': ramos[select]["name_class"], 
+            'teacher': ramos[select]["teacher"]
+        }
+    )
+
+
+run()
 
 print(f"{MESSAGE_COLOR} Plantilla creada!")
 print(f"Ubicada dentro de: {os.getcwd()}{RESET_ALL} ")
