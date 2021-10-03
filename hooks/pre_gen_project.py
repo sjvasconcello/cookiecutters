@@ -25,7 +25,7 @@ if select not in ramos:
     sys.exit(1)
 
 cookiecutter(
-    "cookiecutters/",
+    "cookiecutters",
     extra_context={
         'name_class': ramos[select]["name_class"],
         'teacher': ramos[select]["teacher"]
