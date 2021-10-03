@@ -10,7 +10,7 @@ MESSAGE_COLOR = "\x1b[34m"
 RESET_ALL = "\x1b[0m"
 
 
-select = {{ cookiecutter.ramo }}
+select = str({{ cookiecutter.ramo }})
 
 
 ramos = {
