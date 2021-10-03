@@ -2,7 +2,7 @@
     "project_title": "Ayudantía ",
     "ramo": "MAT033",
     "theme": "Numeros reales",
-    "project_slug": "{{cookiecutter.class.upper()}}_{{ cookiecutter.project_title.lower().replace(' ','_').replace('-','_')}}",
+    "project_slug": "{{cookiecutter.ramo.upper()}}_{{ cookiecutter.project_title.lower().replace(' ','_').replace('-','_')}}",
     "project_description": "Ayudantía de",
     "project_author_name": "Santiago Vasconcello"
 }
